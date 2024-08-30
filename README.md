@@ -25,7 +25,7 @@
 5.4 Procfile for deployment -> web: gunicorn app:server (Make sure to access app and server instances in app.py)
 6. Deploy on Heroku using git: Create web app web-authenticator on Heroku and then do as follows in terminal having (venv):
 6.1 heroku login
-6.2 git init
+6.2 git init (Will create .git folder)
 6.3 heroku git:remote -a web-authenticator
 6.4 git add .
 6.5 git commit -m 'deploying dash app'
