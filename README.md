@@ -3,7 +3,7 @@
 ## IDE: PyCharm
 ## Steps:
 * Create a new project in PyCharm with python 3.10 and a new virtual environment. (.idea and venv folder will be automatically created)
-* Install just once in terminal with venv:
+* Install just once in terminal having (venv):
 1. pip install dash (main)
 2. pip install dash-auth (optional)
 3. pip install dash-renderer (optional)
@@ -15,7 +15,7 @@
 * To stop the app, use stop button for app.py or in terminal, click on cross at top and then Terminate.
 * Deploying Dashboard (App) on Heroku:
 1. Open PyCharm and create a project with venv
-2. Install all the above packages in terminal having (venv) (Check in app.py for errors to make sure all done)
+2. Install all the above packages in terminal (Check in app.py for errors to make sure all done)
 3. Run and stop app locally to check that app is working (Add debug=True also before running)
 4. Install gunicorn web server to serve Dash application (Never use Flask's development server in production) -> pip install gunicorn 
 5. Create a few files in folder:
@@ -23,7 +23,7 @@
 5.2 .gitignore to make sure that unnecessary files are not pushed to production -> venv
 5.3 requirements.txt that will contain all the Python dependencies and their versions -> run pip freeze > requirements.txt
 5.4 Procfile for deployment -> web: gunicorn app:server (Make sure to access app and server instances in app.py)
-6. Deploy on Heroku using git: Create web app web-authenticator on Heroku and then do as follows in terminal having (venv):
+6. Deploy on Heroku using git: Create web app web-authenticator on Heroku and then do as follows in terminal:
 6.1 heroku login
 6.2 git init (Will create .git folder)
 6.3 heroku git:remote -a web-authenticator
